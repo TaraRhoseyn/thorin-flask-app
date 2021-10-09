@@ -17,7 +17,6 @@
 
     {% for member in company %}
 
-
         <div class="row featurette">
 
             {% if loop.index % 2 != 0 %}
@@ -45,8 +44,11 @@
 
         </div>
         
-        <hr class="featurette-divider">
+        {% if loop.index != loop.length %}
 
+            <hr class="featurette-divider">
+
+        {% endif %}
 
     {% endfor %}
 
