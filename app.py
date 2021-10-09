@@ -6,13 +6,17 @@ app = Flask(__name__)
 """
 Whenever 'route' is called (the directory)
 the index() function is also called due to 
-@app decorator
+@app decorator. The index() function
+can also be called 'a view' and it is 'binded'
+to the decorator directly above it
 """
 @app.route("/")
 def index():
     return render_template("index.html")
 
-
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 if __name__ == "__main__":
     app.run(
