@@ -19,7 +19,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/about")
+@app.route("/about") 
 def about():
     data = []
     with open("data/company.JSON", "r") as json_data:
