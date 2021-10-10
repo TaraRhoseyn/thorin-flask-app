@@ -1,4 +1,4 @@
 package-lock.json
 package.json
-settings.json
-.vscode
+env.py
+__pycache__/
